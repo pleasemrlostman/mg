@@ -1,0 +1,43 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.wrap {
+    width: 500px;
+    margin: 100px auto 0;
+}
+.wrap > .gnb {
+    width: 500px;
+}
+
+.wrap > .gnb > li {
+    /* margin-bottom: 10px; */
+}
+.wrap > .gnb > li > a {
+    display: block;
+    bottom: 500px;
+    height: 50px;
+    line-height: 50px;
+    background: #fc0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid #333;
+    color: #333;
+}
+.wrap > .gnb > li .depth2 {
+    display: none;
+}
+.wrap > .gnb > li .depth2 li {
+}
+.wrap > .gnb > li .depth2 li a {
+    display: block;
+    width: 500px;
+    text-align: center;
+    line-height: 25px;
+    background: #ccc;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    color: #333;
+    font-weight: 500;
+}

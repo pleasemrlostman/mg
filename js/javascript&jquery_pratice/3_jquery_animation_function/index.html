@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <title>jQuery 애니메이션 관련 메서드</title>
+    <style>
+        .box_wrap {
+            width: 640px;
+            height: 200px;
+            border: 5px solid #ccc;
+            margin-top: 10px;
+        }
+
+        .box0 {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+            float: left;
+        }
+
+        .box1 {
+            background: red;
+        }
+
+        .box2 {
+            background: green;
+        }
+
+        .box3 {
+            background: #ffcc00;
+
+        }
+
+        .box4 {
+            background: #ccff00;
+        }
+
+        .box5 {
+            background: #00ccff;
+            margin-right: 0;
+        }
+    </style>
+    <script>
+        $("document").ready(function () {
+            $("#btn1").click(function () {
+                $(".box1").fadeOut();
+            })
+            $("#btn2").click(function () {
+                $(".box1").fadeIn();
+            })
+            $("#btn3").click(function () {
+                $(".box2").fadeToggle();
+            })
+            $("#btn4").click(function () {
+                $(".box3").slideUp();
+            })
+            $("#btn5").click(function () {
+                $(".box3").slideDown();
+            })
+            $("#btn6").click(function () {
+                $(".box4").slideToggle();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>[ jQuery 애니메이션 관련 메서드 ]</h1>
+    <p>1.$("대상").fadeIn();->서서히 나타날 때 숨겨져 있는 요소가 서서히 보일 때</p>
+    <p>2.$("대상").fadeOut();->보이는 요소를 서서히 사라지게 할 때</p>
+    <p>3.$("대상").fadeToggle();-> 클릭 할 시 숨김-나타나기 , 나타나기-숨김</p>
+    <p>4.$("대상").slideUp();->선택된 요소의 높이를 0으로 만들어 설정</p>
+    <p>5.$("대상").slideDown();->선택된 높이를 처음에 설정된 높으민큼 아래로 애니메이션</p>
+    <p>6.$("대상").slideToggle();->클릭하면->높이0, 또 한번 클릭하면 설정값으로</p>
+
+    <button type="button" id="btn1">fadeOut</button>
+    <button type="button" id="btn2">fadeIn</button>
+    <button type="button" id="btn3">fadeToggle</button>
+    <button type="button" id="btn4">slideUp</button>
+    <button type="button" id="btn5">slideDown</button>
+    <button type="button" id="btn6">slideToggle</button>
+
+    <div class="box_wrap">
+        <div class="box0 box1">fadeOut / fadeIn</div>
+        <div class="box0 box2">fadeToggle</div>
+    </div>
+    <div class="box_wrap">
+        <div class="box0 box3">slideUp / slideDown</div>
+        <div class="box0 box4">slideToggle</div>
+        <div class="box0 box5">Animation</div>
+    </div>
+</body>
+
+</html>

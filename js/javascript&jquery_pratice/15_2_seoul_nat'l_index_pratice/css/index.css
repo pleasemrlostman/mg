@@ -1,0 +1,186 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+#section2 {
+    width: 100%;
+    background: #f3f3f3;
+}
+#section2 .section2_inner {
+    width: 1110px;
+    height: 260px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: ;
+}
+#section2 .section2_inner .left {
+    padding: 30px 0 0 30px;
+    width: 540px;
+    height: 260px;
+    background: url("../images/bg_search2020_01.jpg") no-repeat;
+    float: left;
+}
+#section2 .section2_inner .left h2 {
+    font-size: 28px;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+#section2 .section2_inner .left p {
+    font-size: 15px;
+    color: #000;
+    line-height: 26px;
+    margin-bottom: 60px;
+}
+#section2 .section2_inner .left form {
+}
+#section2 .section2_inner .left form fieldset {
+}
+#section2 .section2_inner .left form fieldset legend {
+    position: absolute;
+    left: -99999px;
+}
+#section2 .section2_inner .left form fieldset input {
+    width: 220px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #2263bb;
+    outline: none;
+    float: left;
+    padding-left: 10px;
+}
+#section2 .section2_inner .left form fieldset input::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}
+#section2 .section2_inner .left form fieldset .s2_search {
+    width: 79px;
+    height: 40px;
+    background: #2263bb;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
+#section2 .section2_inner .right {
+    padding: 30px 30px 0 30px;
+    width: 540px;
+    height: 260px;
+    float: right;
+    box-sizing: border-box;
+}
+#section2 .section2_inner .right .menu {
+    overflow: hidden;
+}
+#section2 .section2_inner .right .menu .list {
+    float: left;
+}
+#section2 .section2_inner .right .menu .list li {
+    float: left;
+    padding: 0 14px;
+    position: relative;
+}
+#section2 .section2_inner .right .menu .list li::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background: #ccc;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+#section2 .section2_inner .right .menu .list li:first-child {
+    padding-left: 0;
+}
+#section2 .section2_inner .right .menu .list li:last-child {
+    padding-right: 0;
+}
+#section2 .section2_inner .right .menu .list li:last-child::before {
+    display: none;
+}
+#section2 .section2_inner .right .menu .list li a {
+    color: #888;
+    font-weight: 800;
+    font-size: 19px;
+}
+#section2 .section2_inner .right .menu .list .list1 a {
+    color: #000;
+}
+#section2 .section2_inner .right .menu .list li.list2 a {
+    color: #000;
+}
+#section2 .section2_inner .right .menu .list_more {
+    width: 22px;
+    height: 22px;
+    float: right;
+    border: 1px solid #ccc;
+    text-indent: -99999px;
+    position: relative;
+    background: #fff;
+}
+#section2 .section2_inner .right .menu .list_more::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("../images/spr_common.png") no-repeat;
+    background-position: -147px -77px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#section2 .section2_inner .right .board {
+    margin-top: 40px;
+    overflow: hidden;
+}
+#section2 .section2_inner .right .board li {
+    margin-bottom: 26px;
+    overflow: hidden;
+    padding-left: 8px;
+    position: relative;
+}
+#section2 .section2_inner .right .board li::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #888;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#section2 .section2_inner .right .board li:last-child {
+    margin-bottom: 0;
+}
+#section2 .section2_inner .right .board li a {
+    width: 345px;
+    display: inline-block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+    float: left;
+    line-height: 20px;
+}
+#section2 .section2_inner .right .board li a:hover {
+    text-decoration: underline;
+}
+#section2 .section2_inner .right .board li .new {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../images/spr_common.png") no-repeat;
+    background-position: -33px -125px;
+    text-indent: -99999px;
+}
+#section2 .section2_inner .right .board li em {
+    color: #888;
+    float: right;
+    font-size: 14px;
+}
+
+#section2 .section2_inner .right .board_off {
+    display: none;
+}

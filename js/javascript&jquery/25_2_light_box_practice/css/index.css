@@ -1,0 +1,63 @@
+@charset "utf-8";
+body {
+    letter-spacing: -1px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+#art_work {
+    width: 1290px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#art_work h2 {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#art_work ul {
+}
+#art_work ul li {
+    float: left;
+    margin: 0 15px 30px;
+}
+#art_work ul .list1 {
+    margin-left: 0;
+}
+#art_work ul .list5 {
+    margin-left: 0;
+}
+#art_work ul .list9 {
+    margin-left: 0;
+}
+#art_work ul .list13 {
+    margin-left: 0;
+}
+#art_work ul .list17 {
+    margin-left: 0;
+}
+
+#art_work ul .list4 {
+    margin-right: 0;
+}
+#art_work ul .list8 {
+    margin-right: 0;
+}
+#art_work ul .list12 {
+    margin-right: 0;
+}
+#art_work ul .list16 {
+    margin-right: 0;
+}
+#art_work ul .list20 {
+    margin-right: 0;
+}
+#art_work ul .list_bot {
+    margin-bottom: 0;
+}
+#art_work ul li a {
+}
+
+#art_work ul li:hover {
+    box-shadow: 2px 2px 10px #000;
+}

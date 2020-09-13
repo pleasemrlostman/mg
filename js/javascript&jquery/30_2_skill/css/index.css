@@ -1,0 +1,141 @@
+@charset "utf-8";
+body {
+    letter-spacing: -1px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+#header {
+    width: 100%;
+    height: 660px;
+    background: #333;
+}
+#about {
+    width: 100%;
+    height: 800px;
+    background: #fff;
+}
+#team {
+    width: 100%;
+    height: 720px;
+    background: #333;
+}
+#service {
+    width: 100%;
+    height: 900px;
+    background: #fff;
+}
+.skill {
+    width: 100%;
+    background: #424242;
+}
+.skill .skill_inner {
+    width: 1200px;
+    height: 520px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 90px;
+}
+.skill .skill_inner h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 0;
+    position: relative;
+    margin-bottom: 100px;
+}
+.skill .skill_inner h2::before {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #80ca4d;
+}
+.skill .skill_inner h2 span {
+    color: #80ca4d;
+}
+
+.skill .skill_inner .h_prog_wrap {
+    text-align: center;
+}
+.skill .skill_inner .h_prog_wrap .h_prog {
+    display: inline-block;
+    margin: 0 20px;
+}
+.skill .skill_inner .h_prog_wrap .h_prog1 {
+    margin-left: 0;
+}
+.skill .skill_inner .h_prog_wrap .h_prog6 {
+    margin-right: 0;
+}
+.skill .skill_inner h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.skill .skill_inner .progress-bar {
+    width: 150px;
+    height: 150px;
+}
+.skill .skill_inner .progress-bar div {
+    width: 150px;
+    height: 150px;
+}
+.skill .skill_inner .bar1 {
+    margin-left: 0;
+}
+.skill .skill_inner .bar4 {
+    margin-right: 0;
+}
+.skill .skill_inner .progress-bar div span {
+    width: 125px;
+    height: 125px;
+    font-size: 30px;
+    line-height: 125px;
+    text-align: center;
+    background: #424242;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ---------------------------------------- */
+
+#footer {
+    width: 100%;
+    height: 108px;
+    text-align: center;
+    background: #7ecb3d;
+    color: #fff;
+    padding-top: 20px;
+    position: relative;
+}
+#footer .sns_group {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+#footer .sns_group .sns {
+    display: inline-block;
+    width: 40px;
+    line-height: 40px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 0 7px;
+}
+#footer .sns_group .sns1 {
+    margin-left: 0;
+}
+#footer .sns_group .sns5 {
+    margin-right: 0;
+}
+#footer .sns_group .fab {
+}
+#footer .scroll {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}

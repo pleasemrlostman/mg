@@ -1,0 +1,249 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+#section1 {
+    width: 100%;
+    /* height: 444px; */
+    height: 504px;
+    box-sizing: border-box;
+    background: #f2f2f2;
+}
+#section1 .section1_inner {
+    width: 1200px;
+    height: 444px;
+    margin: 0 auto;
+}
+#section1 .section1_inner > h2 {
+    font-size: 25px;
+    font-weight: 600;
+    float: left;
+    padding-top: 50px;
+    color: #333;
+}
+#section1 .section1_inner .menu {
+    float: right;
+    padding-top: 60px;
+    margin-bottom: 18px;
+}
+#section1 .section1_inner .menu li {
+    float: left;
+    margin-right: 30px;
+}
+#section1 .section1_inner .menu li:last-child {
+    margin-right: 0;
+}
+#section1 .section1_inner .menu .list1 {
+    font-weight: 600;
+}
+#section1 .section1_inner .menu .list_on {
+    font-weight: 600;
+}
+#section1 .section1_inner .menu li a {
+    font-size: 13px;
+    color: #333;
+}
+
+#section1 .section1_inner .product_wrap {
+    width: 1200px;
+    height: 350px;
+    background: #fff;
+    clear: both;
+}
+#section1 .section1_inner .product_wrap .product {
+    overflow: hidden;
+}
+#section1 .section1_inner .product_wrap .product1 {
+}
+#section1 .section1_inner .product_wrap .product2 {
+    display: none;
+}
+#section1 .section1_inner .product_wrap .product3 {
+    display: none;
+}
+#section1 .section1_inner .product_wrap .product li {
+    float: left;
+    margin-left: 14px;
+}
+
+#section1 .section1_inner .product_wrap .product li a {
+    display: block;
+    width: 185px;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 20px 0;
+    position: relative;
+}
+#section1 .section1_inner .product_wrap .product li a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 350px;
+    border: 1px solid #000;
+    top: 0;
+    left: 0;
+    display: none;
+    box-sizing: border-box;
+}
+#section1 .section1_inner .product_wrap .product li a:hover::before {
+    display: block;
+}
+#section1 .section1_inner .product_wrap .product li a button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    top: 70px;
+    text-indent: -99999px;
+    display: none;
+}
+#section1 .section1_inner .product_wrap .product li a .heart {
+    left: 38px;
+    background: url("../images/ico.png") no-repeat;
+    background-position: -353px -50px;
+}
+#section1 .section1_inner .product_wrap .product li a .cart {
+    left: 96px;
+    background: url("../images/ico.png") no-repeat;
+    background-position: -353px -150px;
+}
+#section1 .section1_inner .product_wrap .product li a:hover button {
+    display: block;
+}
+#section1 .section1_inner .product_wrap .product li a .dum {
+    position: absolute;
+    top: 175px;
+    left: 18px;
+    background: #333;
+    width: 41px;
+    line-height: 23px;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    display: inline-block;
+}
+#section1 .section1_inner .product_wrap .product li a .img {
+    width: 185px;
+    height: 155px;
+    box-sizing: border-box;
+    margin-bottom: 33px;
+}
+#section1 .section1_inner .product_wrap .product li a h2 {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+    padding-left: 18px;
+}
+#section1 .section1_inner .product_wrap .product li a p {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 11px;
+    line-height: 16px;
+    height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 18px;
+}
+#section1 .section1_inner .product_wrap .product li a:hover p {
+    text-decoration: underline;
+}
+#section1 .section1_inner .product_wrap .product li a h3 {
+    margin-bottom: 22px;
+    font-size: 14px;
+    color: #333;
+    padding-left: 18px;
+}
+#section1 .section1_inner .product_wrap .product li a h3 .bold {
+    font-weight: 800;
+    font-size: 16px;
+}
+#section1 .section1_inner .product_wrap .product li a .star {
+    font-size: 13px;
+    color: #333;
+    height: 13px;
+    display: inline-block;
+    float: left;
+    padding-left: 18px;
+}
+#section1 .section1_inner .product_wrap .product li a .star_grey {
+    color: #b7b7b7;
+}
+#section1 .section1_inner .product_wrap .product li a .review {
+    font-size: 13px;
+    color: #333;
+    height: 13px;
+    margin-left: 6px;
+    padding-left: 6px;
+    display: inline-block;
+    position: relative;
+}
+#section1 .section1_inner .product_wrap .product li a .review::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #b7b7b7;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* -----------------------------이미지삽입시작---------------------------- */
+#section1 .section1_inner .product_wrap .product1 .list1 a {
+    background: url("../images/1.jpg") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product1 .list2 a {
+    background: url("../images/2.jpg") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product1 .list3 a {
+    background: url("../images/3.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product1 .list4 a {
+    background: url("../images/4.jpg") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product1 .list5 a {
+    background: url("../images/5.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product1 .list6 a {
+    background: url("../images/6.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product2 .list1 a {
+    background: url("../images/7.jpg") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product2 .list2 a {
+    background: url("../images/8.jpg") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product2 .list3 a {
+    background: url("../images/9.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product2 .list4 a {
+    background: url("../images/10.jpg") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product2 .list5 a {
+    background: url("../images/11.jpg") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product2 .list6 a {
+    background: url("../images/12.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product3 .list1 a {
+    background: url("../images/13.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product3 .list2 a {
+    background: url("../images/14.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product3 .list3 a {
+    background: url("../images/15.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product3 .list4 a {
+    background: url("../images/16.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product3 .list5 a {
+    background: url("../images/17.png") no-repeat center top;
+}
+#section1 .section1_inner .product_wrap .product3 .list6 a {
+    background: url("../images/18.png") no-repeat center top;
+}
+/* -----------------------------이미지삽입끝---------------------------- */

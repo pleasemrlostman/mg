@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>데이터유형</title>
+    </head>
+    <body>
+        <h1>1.자바스크립트의 데이터 유형</h1>
+        <p>데이터 타입이란 프로그램이 다룰 수 있는 값의 종류</p>
+        <ol>
+            <li>문자형(string)데이터</li>
+            <li>숫자형(number)데이터</li>
+            <li>부울형(boolean)데이터</li>
+            <li>찾을 수 없는(undefinded) 데이터</li>
+            <li>값없음(null)데이터</li>
+            <li>함수형(function)데이터</li>
+            <li>배열형(array)데이터</li>
+            <li>객체형(object)데이터</li>
+        </ol>
+    </body>
+    <script>
+        var str = "20";
+        var num = 20;
+        var bol = true;
+        var num2 = null;
+        var num3;
+
+        // 데이터 유형을 확인(typeof)하면서 출력 그 변수의 값이 무엇인지 보여주는 함수
+        document.write("<hr>");
+        document.write("str변수의 유형은" + typeof str + "<br>");
+        document.write("num변수의 유형은" + typeof num + "<br>");
+        document.write("bol변수의 유형은" + typeof bol + "<br>");
+        document.write("num2변수의 유형은" + typeof num2 + "<br>");
+        document.write("num3변수의 유형은" + typeof num3 + "<br>");
+        document.write("<hr>");
+        // 배열형데이터
+        var array = ["딸기", "바나나", "포도", "애플"];
+        // 원래대로라면 변수를 하나하나 만들어서 하지만
+        // 하나의 변수에 다 때려 넣는게 배열형
+        document.write(array + "<br>");
+        // array는 0부터 시작합니다
+        document.write(array[0] + "<br>");
+        document.write(array[3] + "<br>");
+        document.write(array[2] + "<br>");
+        document.write("<br>" + "오늘의 추천 과일은" + array[2] + "입니다");
+        // 함수형데이터
+        function test() {
+            document.write("<br>" + "함수도 데이터에 값으로 사용할 수 있다.");
+        }
+        test();
+        // test라고 만든 함수를 출력하려면 test()라고 작성해서 호출해야 한다
+
+        // 객체형데이터
+        // 데이터 여러개를 묶은 애를 개체라고한다
+        var person = {
+            name: "john",
+            age: 100,
+            job: "webdesigner",
+        };
+
+        document.write("저의 이름은" + person.name + "입니다");
+        document.write(
+            "<br>" +
+                "저의 이름은 " +
+                person.name +
+                "이고" +
+                " 직업은" +
+                person.job +
+                "이고" +
+                " 나이는" +
+                person.age +
+                "입니다"
+        );
+        document.write("<br>" + "오늘의 신선한 과일은 " + array[1] + "입니다");
+    </script>
+</html>

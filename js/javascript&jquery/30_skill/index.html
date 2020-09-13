@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .chart {
+                height: 50px;
+                background: #ccc;
+            }
+            .chart span {
+                display: block;
+                line-height: 50px;
+                text-align: right;
+                color: #fff;
+                box-sizing: border-box;
+                width: 95%;
+                background: lightblue;
+            }
+            .photo span {
+                animation: photo_ani 1s ease;
+            }
+            .ill span {
+                width: 90%;
+                background: #333;
+                animation: ill_ani 2s ease;
+            }
+            .html span {
+                width: 95%;
+                background: lightcoral;
+                animation: html_ani 2s ease;
+            }
+            .css span {
+                width: 95%;
+                background: lightslategrey;
+                animation: css_ani 2s ease;
+            }
+            .java span {
+                width: 75%;
+                background: purple;
+                animation: java_ani 2s ease;
+            }
+            .jq span {
+                width: 80%;
+                background: greenyellow;
+                animation: jq_ani 2s ease;
+            }
+            @keyframes photo_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 95%;
+                }
+            }
+            @keyframes ill_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 90%;
+                }
+            }
+            @keyframes html_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 95%;
+                }
+            }
+            @keyframes css_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 95%;
+                }
+            }
+            @keyframes java_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 75%;
+                }
+            }
+            @keyframes jq_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 80%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>photoshop</h2>
+        <div class="chart photo">
+            <span>95%</span>
+        </div>
+        <h2>illustrator</h2>
+        <div class="chart ill">
+            <span>85%</span>
+        </div>
+        <h2>html5</h2>
+        <div class="chart html">
+            <span>95%</span>
+        </div>
+        <h2>css</h2>
+        <div class="chart css">
+            <span>95%</span>
+        </div>
+        <h2>javascript</h2>
+        <div class="chart java">
+            <span>75%</span>
+        </div>
+        <h2>jquery</h2>
+        <div class="chart jq">
+            <span>80%</span>
+        </div>
+    </body>
+</html>

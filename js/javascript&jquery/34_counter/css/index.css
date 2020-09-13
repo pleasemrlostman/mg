@@ -1,0 +1,25 @@
+@charset "utf-8";
+body {
+    letter-spacing: -1px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.container {
+    margin: 100px auto 0;
+    text-align: center;
+}
+.container .f_0 {
+    font-size: 50px;
+    display: inline-block;
+    margin: 0 50px;
+}
+.container .f_0 .counter {
+    font-size: 100px;
+    margin: 30px 0;
+}
+.container .f_0 .tit {
+    font-size: 30px;
+    color: red;
+    line-height: 34px;
+}
+.container .f_0 {
+}

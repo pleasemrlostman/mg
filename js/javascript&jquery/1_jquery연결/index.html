@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset">
+    <script src="js/jquery-3.5.0.slim.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background:#fc0;
+            border: 1px solid red;;
+        }
+    </style>
+    <title>제이쿼리연결</title>
+</head>
+<body>
+    <a href="#"><div class="box">박스</div></a>
+    <script>
+        $(function(){
+            $(".box").click(function(){
+                $(".box").css({"background-color" : "pink"})
+            });
+        });    
+    </script>
+</body>
+</html>

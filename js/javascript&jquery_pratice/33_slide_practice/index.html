@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/index.js"></script>
+        <title>Document</title>
+    </head>
+    <style>
+        #main {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        #main .main_wrap {
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #main .main_wrap .slider {
+            width: 3200px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #main .main_wrap .slider .slide {
+            float: left;
+            width: 800px;
+            height: 400px;
+            box-sizing: border-box;
+        }
+        #main .main_wrap .slider .slide a {
+            width: 800px;
+            height: 400px;
+            display: block;
+        }
+        #main .main_wrap .slider .slide1 a {
+            background: red;
+        }
+        #main .main_wrap .slider .slide4 a {
+            background: yellow;
+        }
+        #main .main_wrap .slider .slide3 a {
+            background: blue;
+        }
+        #main .main_wrap .slider .slide2 a {
+            background: green;
+        }
+
+        #main2 {
+            width: 100%;
+        }
+        #main2 .main_wrap2 {
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+        }
+        #main2 .main_wrap2 .slider2 {
+            width: 600px;
+            /* height: 1200px; */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #main2 .main_wrap2 .slider2 li {
+            width: 600px;
+            height: 300px;
+            border: 1px solid green;
+        }
+        #main2 .main_wrap2 .slider2 li:first-child a {
+            background: purple;
+        }
+        #main2 .main_wrap2 .slider2 li:nth-child(2) a {
+            background: lawngreen;
+        }
+        #main2 .main_wrap2 .slider2 li:nth-child(3) a {
+            background: lightcoral;
+        }
+        #main2 .main_wrap2 .slider2 li:last-child a {
+            background: lightslategrey;
+        }
+        #main2 .main_wrap2 .slider2 li a {
+            display: block;
+            width: 600px;
+            height: 300px;
+        }
+    </style>
+    <body>
+        <div id="main">
+            <div class="main_wrap">
+                <ul class="slider">
+                    <li class="slide slide1"><a href="javascritp:;"></a></li>
+                    <li class="slide slide2"><a href="javascritp:;"></a></li>
+                    <li class="slide slide3"><a href="javascritp:;"></a></li>
+                    <li class="slide slide4"><a href="javascritp:;"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div id="main2">
+            <div class="main_wrap2">
+                <ul class="slider2">
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                </ul>
+            </div>
+        </div> -->
+    </body>
+    <script>
+        $(function () {
+            setInterval(function () {
+                $(".slider li:last-child").insertBefore(
+                    ".slider li:first-child"
+                );
+                $(".slider").css({ "margin-left": "-800px" });
+                $(".slider").animate({ "margin-left": 0 }, 1000);
+            }, 2000);
+
+            // setInterval(function () {
+            //     $(".slider2 li:last-child").insertBefore(
+            //         ".slider2 li:first-child"
+            //     );
+            //     $(".slider2").css({ "margin-top": "-300px" });
+            //     $(".slider2").animate({ "margin-top": 0 });
+            // });
+        });
+    </script>
+</html>

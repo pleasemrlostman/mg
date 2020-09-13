@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/index.js"></script>
+        <title>함수(function)</title>
+    </head>
+    <body>
+        <h1>[ 자바스크립트 함수란? ]</h1>
+        <ol>
+            <li>실행할 내용을 재사용 가능하게 묶어둔(모듈화) 프로그램 성넌</li>
+            <li>입력(인자,arrgument)과 출력(반환,return)으로 구성되어 있다.</li>
+        </ol>
+        <h2>함수를 선언하는 방법</h2>
+        <ol>
+            <li>function으로 함수명 지정</li>
+            <li>
+                인자는 함수에 저장되는 변수로서 콤마(,)로 구분하며, 갯수에는
+                제한이 없음
+            </li>
+            <li>
+                반환(return)은 함수가 결과값으로 출력하는 값으로,
+                반환(return)후에는 함수가 종료된다.
+            </li>
+        </ol>
+        <hr />
+        <script>
+            var array = [10, 20, 30, 40];
+            var res1 = array[0] + array[1];
+            document.write(res1 + "<br>");
+            var res2 = array[2] + array[3];
+            document.write(res2 + "<br>");
+
+            function sum(a, b) {
+                var puls = a + b;
+                return puls;
+            }
+            document.write(sum(array[1], array[3]) + "<br>");
+            document.write(sum(array[0], array[3]) + "<br>");
+            document.write(sum(100, array[3]) + "<br>");
+            document.write("<hr>");
+        </script>
+
+        <!-- 웹에서 자바스크립트 함수를 소환시키는 명렁어  (이부분이 좀 어려우니까 잘 봐두도록 한다)        -->
+        <input
+            type="button"
+            value="10+20"
+            id="btn1"
+            onclick="alert(sum(array[0],array[1]))"
+        />
+        <input
+            type="button"
+            value="20+20"
+            id="btn2"
+            onclick="alert(sum(array[1],20))"
+        />
+        <input
+            type="button"
+            value="40+100"
+            id="btn3"
+            onclick="alert(sum(array[3],100))"
+        />
+        <p>
+            <input type="text" id="t1" /> +10
+            <input type="button" value="출력" id="btn4" />
+        </p>
+        <script>
+            var t1 = document.getElementById("t1");
+            var b4 = document.getElementById("btn4");
+
+            function sum1() {
+                var res = Number(t1.value) + 10;
+                return res;
+            }
+
+            b4.onclick = function () {
+                alert(sum1());
+            };
+        </script>
+    </body>
+</html>

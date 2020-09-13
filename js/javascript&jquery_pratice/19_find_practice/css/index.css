@@ -1,0 +1,144 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+#menu {
+    background: url("../images/main_bg.jpg") no-repeat center top;
+    height: 1121px;
+}
+#menu .menu1 {
+    width: 999px;
+    margin: 71px auto 67px;
+    overflow: hidden;
+}
+#menu .menu1 li {
+    width: 333px;
+    height: 341px;
+    box-sizing: border-box;
+    float: left;
+}
+#menu .menu1 li a {
+    display: block;
+    width: 333px;
+    height: 341px;
+}
+#menu .menu1 li a h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+#menu .menu1 li a .img1 {
+    width: 333px;
+    height: 250px;
+    position: relative;
+    text-indent: -99999px;
+    margin-bottom: 15px;
+}
+#menu .menu1 li a .img2 {
+    width: 333px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#menu .menu1 li a p {
+    text-align: center;
+    color: #4c4d52;
+}
+#menu .menu1 .list1 .img1 {
+    background: url("../images/area1_img1.jpg") no-repeat;
+}
+#menu .menu1 .list2 .img1 {
+    background: url("../images/area1_img2.jpg") no-repeat;
+}
+#menu .menu1 .list3 .img1 {
+    background: url("../images/area1_img3.jpg") no-repeat;
+}
+#menu .menu1 li .img2 {
+    background: url("../images/area1_bg.png") no-repeat;
+    display: none;
+}
+
+#menu .menu2 {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#menu .menu2 li {
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    float: left;
+}
+#menu .menu2 li a {
+    width: 250px;
+    height: 300px;
+    display: block;
+    text-indent: -99999px;
+}
+#menu .menu2 li a .img1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#menu .menu2 li a .img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#menu .menu2 li a .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menu .menu2 .list1 a .img1 {
+    background: url("../images/area2_img2.jpg") no-repeat;
+}
+#menu .menu2 .list1 a .img2 {
+    background: url("../images/area2_img2_on.jpg") no-repeat;
+}
+#menu .menu2 .list1 a .logo {
+    width: 162px;
+    height: 168px;
+    background: url("../images/a2_logo2.png") no-repeat;
+}
+#menu .menu2 .list2 a .img1 {
+    background: url("../images/area2_img3.jpg") no-repeat;
+}
+#menu .menu2 .list2 a .img2 {
+    background: url("../images/area2_img3_on.jpg") no-repeat;
+}
+#menu .menu2 .list2 a .logo {
+    width: 71px;
+    height: 78px;
+    background: url("../images/a2_logo3.png") no-repeat;
+}
+#menu .menu2 .list3 a .img1 {
+    background: url("../images/area2_img4.jpg") no-repeat;
+}
+#menu .menu2 .list3 a .img2 {
+    background: url("../images/area2_img4_on.jpg") no-repeat;
+}
+#menu .menu2 .list3 a .logo {
+    width: 137px;
+    height: 48px;
+    background: url("../images/a2_logo4.png") no-repeat;
+}
+#menu .menu2 .list4 a .img1 {
+    background: url("../images/area2_img5.jpg") no-repeat;
+}
+#menu .menu2 .list4 a .img2 {
+    background: url("../images/area2_img5_on.jpg") no-repeat;
+}
+#menu .menu2 .list4 a .logo {
+    width: 170px;
+    height: 39px;
+    background: url("../images/a2_logo5.png") no-repeat;
+}

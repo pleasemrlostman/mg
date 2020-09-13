@@ -1,0 +1,3 @@
+$(function () {
+    $(".progress-bar").loading();
+});

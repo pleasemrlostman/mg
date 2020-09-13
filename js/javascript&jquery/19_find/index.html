@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="section0">
+                <ul class="list">
+                    <li>
+                        <a href="javascript:;">
+                            <h2>CONTRIBUTION</h2>
+                            <div class="img">
+                                <img src="images/area1_img1.jpg" alt="" />
+                                <div class="cover"></div>
+                            </div>
+                            <p>
+                                데상트코리아는 세상과 함게 숨쉬고<br />스포츠
+                                발전에 기여합니다.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <h2>SPORTS EVENT</h2>
+                            <div class="img">
+                                <img src="images/area1_img2.jpg" alt="" />
+                                <div class="cover"></div>
+                            </div>
+                            <p>
+                                다양한 스포츠 경기를 개최하고 후원함으로써<br />
+                                스포츠의저변을 확대합니다.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <h2>WITH US</h2>
+                            <div class="img">
+                                <img src="images/area1_img3.jpg" alt="" />
+                                <div class="cover"></div>
+                            </div>
+                            <p>
+                                신규거래 신청을 받습니다.
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section1">
+                <ul class="list">
+                    <li class="list1">
+                        <a href="javascript:;">
+                            <div class="img1">
+                                <img src="images/area2_img2.jpg" alt="" />
+                            </div>
+                            <div class="img2">
+                                <img src="images/area2_img2_on.jpg" alt="" />
+                            </div>
+                            <div class="logo">데상트</div>
+                        </a>
+                    </li>
+                    <li class="list2">
+                        <a href="javascript:;">
+                            <div class="img1">
+                                <img src="images/area2_img3.jpg" alt="" />
+                            </div>
+                            <div class="img2">
+                                <img src="images/area2_img3_on.jpg" alt="" />
+                            </div>
+                            <div class="logo">데상트</div>
+                        </a>
+                    </li>
+                    <li class="list3">
+                        <a href="javascript:;">
+                            <div class="img1">
+                                <img src="images/area2_img4.jpg" alt="" />
+                            </div>
+                            <div class="img2">
+                                <img src="images/area2_img4_on.jpg" alt="" />
+                            </div>
+                            <div class="logo">먼씽웨어</div>
+                        </a>
+                    </li>
+                    <li class="list4">
+                        <a href="javascript:;">
+                            <div class="img1">
+                                <img src="images/area2_img5.jpg" alt="" />
+                            </div>
+                            <div class="img2">
+                                <img src="images/area2_img5_on.jpg" alt="" />
+                            </div>
+                            <div class="logo">먼씽웨어</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $(".list li a").mouseenter(function () {
+                    $(this).find(".img2").stop().fadeIn(500);
+                    // find는 즉 하위에 있는 항목을 보여주려고 사용하는거다
+                });
+                $(".list li a").mouseleave(function () {
+                    $(this).find(".img2").stop().fadeOut(500);
+                });
+
+                $(".section0 li a").mouseenter(function () {
+                    $(this).find(".cover").stop().fadeIn(500);
+                });
+                $(".section0 li a").mouseleave(function () {
+                    $(this).find(".cover").stop().fadeOut(500);
+                });
+            });
+        </script>
+    </body>
+</html>

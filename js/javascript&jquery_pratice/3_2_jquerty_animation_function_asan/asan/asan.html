@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $(".m_gnb").animate({ "left": 0 }, 500);
+                $(".wrap").animate({ "left": 274 }, 500);
+                $(".cover").fadeIn(500);
+            })
+            $(".log").click(function () {
+                $(".m_gnb").animate({ "left": -274 }, 500);
+                $(".wrap").animate({ "left": 0 }, 500);
+                $(".cover").fadeOut(500);
+            })
+        })
+    </script>
+    <style>
+        .wrap {
+            position: relative;
+        }
+
+        .cover {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            top: 0;
+            left: 0;
+            z-index: 20;
+            display: none;
+        }
+
+        #header {
+            height: 45px;
+            width: 100%;
+            position: relative;
+            background: #33353f;
+        }
+
+        #header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #header h1 a {
+            display: block;
+            width: 90px;
+            height: 45px;
+            background: url("images/img_header_logo.png") no-repeat;
+            background-size: 90px;
+            text-indent: -99999px;
+        }
+
+        #header button {
+            position: absolute;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            text-indent: -99999px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        #header .btn {
+            top: 50%;
+            left: 0;
+            background: url("images/bg_header_lnb.png") no-repeat;
+            background-size: 45px;
+        }
+
+        #header .search {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            background: url("images/img_topSerch.png") no-repeat;
+            background-size: 45px;
+        }
+
+        .m_gnb {
+            position: fixed;
+            width: 100%;
+            width: 274px;
+            height: 100%;
+            background: #f1f1f1;
+            box-sizing: border-box;
+            z-index: 21;
+            left: -274px;
+        }
+
+        .m_gnb .m_home {
+            width: 100%;
+            height: 173px;
+            background: #111;
+            padding: 40px 20px 35px;
+            box-sizing: border-box;
+        }
+
+        .m_gnb .m_home p {
+            color: #fff;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 25px;
+        }
+
+        .m_gnb .m_menu {
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        .m_gnb .m_login {
+            width: 232px;
+        }
+
+        .m_gnb .m_menu .img {
+            width: 100%;
+        }
+
+        .m_gnb .m_reserve {
+            padding-top: 35px;
+        }
+
+        .m_gnb .m_reserve img {
+            width: 235px;
+        }
+
+        .m_reserve {
+            text-align: center;
+        }
+    </style>
+    <title>아산병원복습</title>
+</head>
+
+<body>
+    <div class="m_gnb">
+        <div class="m_home">
+            <p>로그인 하시면 더 많은 정보를<br>
+                확인 하실 수 있습니다</p>
+            <a href="#" class="log"><img class="m_login" src="images/btn_login.png" alt=""></a>
+        </div>
+        <ul class="m_menu">
+            <li><a href="#"><img src="images/img_lnbtab01_off.png" class="img" alt=""></a></li>
+            <li><a href="#"><img src="images/img_lnbtab02_off.png" class="img" alt=""></a></li>
+            <li><a href="#"><img src="images/img_lnbtab03_off.png" class="img" alt=""></a></li>
+            <li><a href="#"><img src="images/img_lnbtab04_off.png" class="img" alt=""></a></li>
+            <li><a href="#"><img src="images/img_lnbtab05_off.png" class="img" alt=""></a></li>
+        </ul>
+        <div class="m_reserve">
+            <img src="images/btn_reserve.png" alt="">
+        </div>
+    </div>
+    <div class="cover"></div>
+    <div class="wrap">
+        <div id="header">
+            <button type="button" class="btn">header_meun</button>
+            <h1><a href="#">logo</a></h1>
+            <button translate="button" class="search">header_search</button>
+        </div>
+    </div>
+</body>
+
+</html>

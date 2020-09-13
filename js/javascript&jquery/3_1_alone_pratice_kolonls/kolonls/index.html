@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="js/jquery-3.5.0.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script>
+        $("document").ready(function () {
+            $("#gnb_li1").hover(function () {
+                $(".dep1").slideToggle();
+            })
+            $("#gnb_li2").hover(function () {
+                $(".dep2").slideToggle();
+            })
+            $("#gnb_li3").hover(function () {
+                $(".dep3").slideToggle();
+            })
+            $("#gnb_li4").hover(function () {
+                $(".dep4").slideToggle();
+            })
+            $("#gnb_li5").hover(function () {
+                $(".dep5").slideToggle();
+            })
+        })
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div id="header">
+        <div class="header_inner">
+            <h1 class="logo">logo</h1>
+            <ul class="gnb">
+                <li id="gnb_li1">
+                    <a href="#">회사소개</a>
+                    <ul class="depth2 dep1">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">개요</a></li>
+                        <li><a href="#">사업장소개</a></li>
+                    </ul>
+                </li>
+                <li id="gnb_li2">
+                    <a href="#">사업부문</a>
+                    <ul class="depth2 dep2">
+                        <li><a href="#">바이오</a></li>
+                        <li><a href="#">케미컬</a></li>
+                    </ul>
+                </li>
+                <li id="gnb_li3">
+                    <a href="#">IR/PR</a>
+                    <ul class="depth2 dep3">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">뉴스</a></li>
+                        <li><a href="#">IR 자료</a></li>
+                        <li><a href="#">재무실적</a></li>
+                        <li><a href="#">주가정보</a></li>
+                        <li><a href="#">공시</a></li>
+                    </ul>
+                </li>
+                <li id="gnb_li4">
+                    <a href="#">인재채용</a>
+                    <ul class="depth2 dep4">
+                        <li><a href="#">채용프로세스</a></li>
+                        <li><a href="#">조직문화</a></li>
+                        <li><a href="#">복리후생</a></li>
+                        <li><a href="#">인재육성</a></li>
+                        <li><a href="#">직무소개</a></li>
+                    </ul>
+                </li>
+                <li id="gnb_li5">
+                    <a href="#">고객지원</a>
+                    <ul class="depth2 dep5">
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="r_gnb">
+                <li><a href="#">국문</a></li>
+                <li><a href="#">ENG</a></li>
+                <li><a href="#">MENU</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main_visual">
+        </div>
+        <div class="main_text">
+            <p class="p1">우리 곁에 가까이 건강과 행복한 미래를 위해</p>
+            <p class="p2">코오롱생명과학이 함께 합니다.</p>
+            <div class="main_logo"><a href="#"></a></div>
+
+        </div>
+        <div class="mouse">
+        </div>
+        <div class="scroll">
+        </div>
+        <div class="left"><a href=""></a></div>
+        <div class="right"><a href=""></a></div>
+    </div>
+</body>
+
+</html>

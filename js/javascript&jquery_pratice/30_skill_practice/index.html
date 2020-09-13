@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/index.js"></script>
+        <title>Document</title>
+        <style>
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            div {
+                width: 100%;
+                border: 1px solid #333;
+                line-height: 50px;
+                margin-bottom: 5px;
+            }
+            span {
+                display: block;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                text-align: right;
+            }
+            .photo span {
+                width: 85%;
+                background: red;
+                animation: photo_move 1.5s ease;
+            }
+            @keyframes photo_move {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 85%;
+                }
+            }
+            .ill span {
+                width: 80%;
+                background: orange;
+                animation: ill_move 1.5s ease;
+            }
+            @keyframes ill_move {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 80%;
+                }
+            }
+            .html span {
+                width: 95%;
+                background: yellow;
+                animation: html_move 1.5s ease;
+            }
+            @keyframes html_move {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 95%;
+                }
+            }
+            .css span {
+                width: 90%;
+                background: green;
+                animation: css_move 1.5s ease;
+            }
+            @keyframes css_move {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 90%;
+                }
+            }
+            .java span {
+                width: 75%;
+                background: blue;
+                animation: java_move 1.5s ease;
+            }
+            @keyframes java_move {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 75%;
+                }
+            }
+            .jq span {
+                width: 80%;
+                background: purple;
+                animation: jq_move 1.5s ease;
+            }
+            @keyframes jq_move {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 80%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>PHOTOSHOP</h2>
+        <div class="chart photo">
+            <span>85%</span>
+        </div>
+        <h2>ILLUSTRATOR</h2>
+        <div class="chart ill">
+            <span>80%</span>
+        </div>
+        <h2>HTML5</h2>
+        <div class="chart html">
+            <span>95%</span>
+        </div>
+        <h2>CSS3</h2>
+        <div class="chart css">
+            <span>90%</span>
+        </div>
+        <h2>JAVASCRIPT</h2>
+        <div class="chart java">
+            <span>75%</span>
+        </div>
+        <h2>JQUERY</h2>
+        <div class="chart jq">
+            <span>80%</span>
+        </div>
+    </body>
+</html>

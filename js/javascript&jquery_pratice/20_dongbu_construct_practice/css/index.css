@@ -1,0 +1,234 @@
+@charset "utf-8";
+#header {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid #efefef;
+}
+
+#header .logo {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#header .logo a {
+    display: block;
+    background: url("../images/logo.png") no-repeat;
+    width: 115px;
+    height: 30px;
+    text-indent: -99999px;
+}
+
+#header .lang_wrap {
+    border: 1px solid #eaeaea;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+    z-index: 5;
+}
+/* 상위에다가 z-index를 줘야 제대로 먹힌다 */
+
+#header .lang_wrap .lang {
+    display: block;
+    padding: 6px 17px 6px 7px;
+    font-size: 12px;
+    color: #0e0e0e;
+}
+#header .lang_wrap .lang::after {
+    content: "";
+    position: absolute;
+    background: url("../images/select_ico.png");
+    width: 9px;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+}
+
+#header .another_lang {
+    border: 1px solid #eaeaea;
+    border-top: none;
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    text-indent: 6px;
+    top: 24px;
+    left: -1px;
+    background: #fff;
+    display: none;
+}
+#header .another_lang li a {
+    display: block;
+    line-height: 24px;
+    border-top: 1px solid #eaeaea;
+    color: #0e0e0e;
+}
+
+#header .b_btn {
+    display: block;
+    position: absolute;
+    right: 15px;
+    width: 30px;
+    height: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header .b_btn span {
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: all 0.5s ease;
+}
+#header .b_btn.on span {
+    background: rgba(0, 0, 0, 0);
+}
+#header .b_btn span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    top: -10px;
+    left: 0;
+    transition: all 0.5s ease;
+}
+#header .b_btn.on span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+#header .b_btn span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    bottom: -10px;
+    left: 0;
+    transition: all 0.5s ease;
+}
+#header .b_btn.on span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+/* 오늘 풀면서 내가 왜 안됐는지 보는 식 */
+
+/* 오늘 이게 안됐던 이유는 , 그전에 span으로 해서 되는 이유는
+.on달아 준거에서 top:0 bottom:0으로 달아주면 기준점(span)으로
+서로 모이기 때문에 거기서 rotate를 해주면 서로 같은 위치에서 회전되기 때문에
+딱 알맞게 떨어진다, 하지만 내가 준(b_btn)에다 달아주게되면 기준점을 top:0 bottom:0으로 잡으면
+서로의 위치가 떨어져 있기때문에 rotate를 돌려줘도 서로 딱 평행하게 되지 않는다,
+그러므로 앞으로 이런 엘리먼트를 넣어 줄 때는 반드시 기준점으로잡아주도록 하자 */
+
+/* #header .b_btn::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    top:0;
+    left:0;
+}
+#header .b_btn.on::before{
+    transform: rotate(45deg);
+
+}
+
+#header .b_btn::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    bottom:0;
+    left:0;
+}
+#header .b_btn::after{
+    transform: rotate(-45deg);
+    bottom:0;
+} */
+
+.left_menu {
+    /* border-top: 1px solid #efefef; */
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    right: -100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    background: #fff;
+    z-index: 1;
+    border-top: 1px solid #dedede;
+}
+/* fixed와 absolute의 차이점을 잘 구별하도록 하자 */
+.left_menu.show {
+    right: 0;
+    transition: all 0.5s ease;
+}
+.left_menu > ul > li {
+    /* border-top: 1px solid #efefef; */
+}
+.left_menu > ul > li > a {
+    line-height: 60px;
+    display: block;
+    border-bottom: 1px solid #efefef;
+    text-indent: 45px;
+    color: #0e0e0e;
+    position: relative;
+    font-size: 14px;
+    font-size: 500;
+}
+.left_menu > ul > li > a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background: url("../images/ico_1.png");
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    transition: all 0.3s ease;
+}
+.left_menu > ul > li.on > a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background: url("../images/ico_2.png");
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+.left_menu > ul > li > .depth2 {
+    display: none;
+}
+.left_menu > ul > li > .depth2 li {
+    background: #eaeaea;
+}
+.left_menu > ul > li > .depth2 a {
+    display: block;
+    text-indent: 45px;
+    line-height: 48px;
+    color: #333;
+    font-size: 13px;
+    border-bottom: 1px solid #dedede;
+}
+
+#main {
+    background: url("../images/main_visual1.jpg") no-repeat center top;
+    height: 800px;
+}

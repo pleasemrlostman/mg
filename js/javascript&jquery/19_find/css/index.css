@@ -1,0 +1,92 @@
+@charset "utf-8";
+body {
+    letter-spacing: -1px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.main {
+    width: 100%;
+    height: 1121px;
+    background: url("../images/main_bg.jpg") no-repeat center top;
+}
+.main .section0 {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+}
+.main .section0 li {
+    float: left;
+}
+.main .section0 li a {
+}
+.main .section0 li a h2 {
+    text-align: center;
+    font-size: 23px;
+    color: #222;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.main .section0 li a p {
+    color: #555;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 50px;
+    line-height: 20px;
+}
+.main .section0 li a .img {
+    position: relative;
+}
+.main .section0 li a .img .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../images/area1_bg.png") no-repeat;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+/* ---------------------------------section1------------------------------- */
+.main .section1 {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+}
+.main .section1 .list li {
+    float: left;
+    width: 25%;
+    position: relative;
+}
+.main .section1 .list li a {
+    display: block;
+    width: 100%;
+}
+.main .section1 .list li a .img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.main .section1 .list li a .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../images/a2_logo2.png") no-repeat;
+    width: 162px;
+    height: 168px;
+    text-indent: -99999px;
+}
+.main .section1 .list .list2 a .logo {
+    width: 71px;
+    height: 78px;
+    background: url("../images/a2_logo3.png") no-repeat;
+}
+.main .section1 .list .list3 a .logo {
+    width: 137px;
+    height: 48px;
+    background: url("../images/a2_logo4.png") no-repeat;
+}
+.main .section1 .list .list4 a .logo {
+    width: 170px;
+    height: 39px;
+    background: url("../images/a2_logo5.png") no-repeat;
+}

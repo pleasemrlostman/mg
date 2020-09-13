@@ -1,0 +1,45 @@
+@charset "utf-8";
+body {
+    letter-spacing: -1px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.gnb {
+    width: 300px;
+    margin: 50px auto 0;
+    border: 1px solid red;
+}
+.gnb > ul > li {
+    margin-bottom: 10px;
+}
+.gnb > ul > li:last-child {
+    margin-bottom: 0;
+}
+.gnb > ul > li > a {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    background: #444;
+    color: #fff;
+    text-indent: 50px;
+}
+.gnb > ul > li > a:hover {
+    background: #f00;
+}
+.gnb > ul > li > .depth2 {
+    padding: 10px 0;
+    display: none;
+}
+.gnb > ul > li > .depth2 li {
+    padding: 10px 0;
+}
+.gnb > ul > li > .depth2 li a {
+    color: #f2f2f2;
+    text-indent: 50px;
+    display: block;
+    color: #444;
+}
+.gnb > ul > li > .depth2 li:hover {
+    font-weight: 600;
+    color: #000;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/index.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>1.자바스크립트의 데이터 유형</h1>
+        <p>데이터 타입이란 프로그램이 다룰 수 있는 값의 종류</p>
+        <ol>
+            <li>문자형 (string) 데이터</li>
+            <li>숫자형 (number) 데이터</li>
+            <li>부울형 (boolean) 데이터</li>
+            <li>찾을 수 없는 (undefinede) 데이터</li>
+            <li>값없음 (null) 데이터</li>
+            <li>함수형 (function) 데이터</li>
+            <li>배열형 (array) 데이터</li>
+            <li>객체형 (object) 데이터</li>
+        </ol>
+
+        <script>
+            var str = "20";
+            var num = 20;
+            var bol = true;
+            var num2 = null;
+            var num3;
+
+            // 데이터 유형을 확인(tpyeof)하면서 출력 그 변수의 데이터유형이 무엇인지 보여주는 함수
+            document.write("<hr>");
+            document.write("str변수의 유형은" + typeof str + "<br>");
+            document.write("num변수의 유형은" + typeof num + "<br>");
+            document.write("bol변수의 유형은" + typeof bol + "<br>");
+            document.write("num2변수의 유형은" + typeof num2 + "<br>");
+            document.write("num3변수의 유형은" + typeof num3 + "<br>");
+
+            // 배열형 데이터
+            var array = ["피자", "햄버거", "핫도그", "도넛"];
+            document.write(array + "<br>");
+            document.write(array[0] + "<br>");
+            document.write(array[1] + "<br>");
+            document.write(array[2] + "<br>");
+            document.write(array[3] + "<br>");
+            document.write(
+                "오늘의 추천 음식은 " + array[2] + " 입니다" + "<br>"
+            );
+            function test() {
+                document.write("<br>" + "함수도 데이터 값으로 사용할 수 있다.");
+                // 변수가 없으므로 리턴을 써줄 필요가없다
+                // 변수를 다 써주고 마지막으로 보여줄 값을 정해주는게 리턴함수다
+            }
+            test();
+            // test라고 만든 함수를 출력하려면 test()라고 작성해서 호출해야 한다
+
+            // 객체형 데이터
+            // 데이터를 여러개 묶은 데이터를 개체라고한다 ( 배열형 데이터랑 차이점은 뭐지?)
+            // 변수 안에 변수가 있다고 생각하면 편하다
+            // 배열형은 그 변수에 넘버링을 해준다고 생각하면 편하다
+            var person = {
+                name: "Liam",
+                age: 52,
+                job: "singer",
+            };
+            document.write(
+                "<br>" +
+                    "my name is " +
+                    person.name +
+                    "and my job is " +
+                    person.job +
+                    " my age is " +
+                    person.age
+            );
+            document.write("<br>" + person.name + " like " + array[2]);
+        </script>
+    </body>
+</html>

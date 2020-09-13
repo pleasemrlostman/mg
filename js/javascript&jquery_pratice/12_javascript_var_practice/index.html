@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/index.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>[ 자바스크립트 변수란 ]</h1>
+        <p>
+            스크립트는 자신의 작업을 시작하는동안 어떤 정보들을 임시로
+            저장해야할 필요가있다. 이때 스크립트가 데이터를 저장해 두는 것을
+            변수라고 한다.
+        </p>
+        <h2>
+            1.자바스크립트 변수의 종류
+        </h2>
+        <ol>
+            <li>
+                전역변수 : 문서 전체에 영향을 주는 변수로, 영역(함수)에 관계없이
+                어디서든지 사용이 가능한 함수
+            </li>
+            <li>
+                지역변수 : 함수내에서 사용되는 변수로 그 함수 내에서만 영향력을
+                가지고 함수롤 호출했을 경우만 작동하다가 함수가 종료되면
+                소멸되는 변수를 징겨변수라고 한다
+            </li>
+        </ol>
+        <h2>2.변수선언방법</h2>
+        <ol>
+            <li>변수는 반드시 옆문 대소문자가 와야한다 (소문자쓰는걸 권장)</li>
+            <li>변수명 첫 글자는 숫자가 오면 안된다.</li>
+            <li>변수명 사이에 공백을 줄 수 없다.</li>
+            <li>변수명은 영문 대소문자를 구분한다</li>
+            <li>
+                변수명으로 색상이 변하는 예약어는 사용할 수 없다.(자바스크립트
+                기본언어)
+            </li>
+            <li>변수명에 특수문자를 사용할 수 없다.</li>
+            <li>변수명은 의미를 담을 수 있는 이름으로 지정한다</li>
+        </ol>
+        <img src="images/var_list.jpg" alt="" />
+
+        <script>
+            var num01;
+            num01 = "변수를 보여드리겠습니다";
+            // 변수초괴화 : 데이터를 대입하는 것을 의미힌다
+            alert(num01);
+            // 팝업창 같은 경고창으로 변수를 띄우는거다
+            console.log(num01);
+            document.write("<br>" + num01);
+            var number = 3;
+            var n1, n2, n3, n4;
+            // 변수를 동시에 선언할 때는 콤마(,)를 사용한다
+            var text = "내가 변수에 넣고자 하는 문자";
+            // 변수를 지정하는 동시에 변수에 데이터를 넣는 간편한 식
+            var text1 = "년 후에 당신은";
+            var text2 = " 웹 전문가가 되어 있을 겁니다.";
+            var letter = number + text1 + text2;
+            alert(letter);
+            console.log(letter);
+            document.write("<br>" + letter);
+
+            function sum() {
+                var first = "지역변수에대해서";
+                var second = "설명드릴려고합니다";
+                var third = "너무어렵게 생각하지마세요";
+                var res = first + second + third;
+                return res;
+                // 리턴을 안써주면 undefined로 된다 그래서 함수를 완성시켜줄 때는 저걸 써줘야함
+            }
+
+            document.write("<br>" + sum());
+            document.write(first);
+            // first는 지역변수 안에 있어서 그 함수 내에서만 움직인다
+        </script>
+    </body>
+</html>

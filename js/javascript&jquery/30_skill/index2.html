@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background: #333;
+                color: #fff;
+            }
+            h2 {
+                text-align: center;
+            }
+            .skill {
+                width: 600px;
+                margin: 50px auto;
+            }
+            .skill li {
+                margin-bottom: 23px;
+            }
+            .skill li .bar {
+                display: block;
+                height: 3px;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                background: #353b48;
+                box-shadow: 0 0 10px #2c4b68;
+                border-radius: 3px;
+            }
+            .skill li .bar p {
+                font-size: 12px;
+            }
+            .skill li .bar span {
+                display: block;
+                height: 3px;
+                float: left;
+                background: #aaadb2;
+            }
+            .skill li .bar .html5 {
+                width: 95%;
+                animation: html_ani 2s ease;
+            }
+            .skill li .bar .css3 {
+                width: 95%;
+                animation: css_ani 2s ease;
+            }
+            .skill li .bar .javascript {
+                width: 70%;
+                animation: js_ani 2s ease;
+            }
+            .skill li .bar .jquery {
+                width: 75%;
+                animation: jq_ani 2s ease;
+            }
+            .skill li .bar .photoshop {
+                width: 90%;
+                animation: photo_ani 2s ease;
+            }
+            .skill li .bar .ill {
+                width: 85%;
+                animation: ill_ani 2s ease;
+            }
+            /* ------------------------------------------------------- */
+            @keyframes html_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 95%;
+                }
+            }
+            @keyframes css_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 95%;
+                }
+            }
+            @keyframes js_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 70%;
+                }
+            }
+            @keyframes jq_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 75%;
+                }
+            }
+            @keyframes photo_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 90%;
+                }
+            }
+            @keyframes ill_ani {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 85%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>MY Skill</h2>
+
+        <ul class="skill">
+            <li>
+                <h3>HTML5</h3>
+                <span class="bar">
+                    <span class="html5"></span>
+                    <p>95%</p>
+                </span>
+            </li>
+            <li>
+                <h3>CSS3</h3>
+                <span class="bar">
+                    <span class="css3"></span>
+                    <p>95%</p>
+                </span>
+            </li>
+            <li>
+                <h3>JAVASCRIPT</h3>
+                <span class="bar">
+                    <span class="javascript"></span>
+                    <p>70%</p>
+                </span>
+            </li>
+            <li>
+                <h3>jQUERY</h3>
+                <span class="bar">
+                    <span class="jquery"></span>
+                    <p>75%</p>
+                </span>
+            </li>
+            <li>
+                <h3>PHOTOSHOP</h3>
+                <span class="bar">
+                    <span class="photoshop"></span>
+                    <p>90%</p>
+                </span>
+            </li>
+            <li>
+                <h3>ILLUSTRATOR</h3>
+                <span class="bar">
+                    <span class="ill"></span>
+                    <p>85%</p>
+                </span>
+            </li>
+        </ul>
+    </body>
+</html>

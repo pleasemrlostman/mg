@@ -1,0 +1,51 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+ul {
+    width: 1320px;
+    margin: 30px auto;
+    text-align: center;
+}
+ul li {
+    display: inline-block;
+}
+ul li a {
+    width: 200px;
+    display: block;
+    line-height: 30px;
+    background: #333;
+    color: #fff;
+    font-weight: 600;
+}
+.grid {
+    width: 1320px;
+    height: 992px;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+.grid .grid-item {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    float: left;
+    margin: 15px 15px;
+}
+.grid .a a {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: red;
+}
+.grid .b a {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: yellow;
+}
+.grid .c a {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: green;
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web.html,웹표준">
+    <meta name="description" content="css선택자입니다">
+    <meta name="date" content="2020-06-28">
+    <meta name="author" content="정재훈">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 개별선언하기 */
+        /* 개별선언하기는 보시다 싶이 엘리먼트 하나하나에 내가 클래스 지정해주고 css태그 값을 주는것 , 가장 일반적인 형식이라고 보면된다 */
+        .b1 {
+            width: 500px;
+            height: 100px;
+            background: #fc0;
+            border: 1px solid #000;
+        }
+
+        .b2 {
+            width: 500px;
+            height: 100px;
+            background: #cf0;
+            border: 1px solid #000;
+        }
+
+        .b3 {
+            width: 500px;
+            height: 100px;
+            background: #00ccff;
+            border: 1px solid #000;
+        }
+
+        /* 선택자 그룹 지정하기 */
+        /* 선택자 그룹 지정하기는 개별선언하기 했던 항목들을 ,로 하나로 묶어주는건 말한다 항상 ,를쓰고 #나 .를 쓰는걸 잊지말도록 하자 */
+        .b1,
+        .b2,
+        .b3 {
+            width: 500px;
+            height: 100px;
+            border: 3px solid #000;
+            margin-bottom: 10px;
+        }
+
+        /* 하위 선택자- 자손선택자 */
+        /* 자손선택자는 해당항목에 아래에 있는 모든값에 영향을 준다(여기서는 아래에 있는p에 전부 영향을 줌) */
+        .b4 p {
+            color: red;
+        }
+
+        /* 하위선택자- 자식선택자 */
+        /* 자식선택자는 >로 표현하며 바로 자기 아래에 있는 엘리먼트에만 영향을 끼친다 */
+        .b4>p {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* 인접 형제 선택자(이게 의미하는 바만 알아두자) */
+        /* h2밑에 있는 모든 p들에게 영향을 끼치는 선택자이다 h2아래에 p가 있는 구조는 모두 영향을 받는다고 생각하면되고 그걸 +로 표현하는거만 알아두도록 하자 */
+        h2+p {
+            background: #fc0;
+        }
+
+        /* 첫글자 가상 선택자 */
+        /* 이거도 .tit이랑 아래에있는 p인데 그 가상선택자의 첫번째 글자에 영향을 준거다 */
+        .tit+p::first-letter {
+            border: 1px solid #000000;
+            font-size: 30px;
+            padding: 5px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        /* 속성선택자 지정하기 */
+        /* 여기서는 인풋의 타입이 어떻게 들어가는지를 주의해서 보도록하자 */
+        input[type] {
+            width: 350px;
+            height: 30px;
+            border: 1px solid red;
+            background: #e2e2e2;
+        }
+
+        input[type="text"] {
+            color: red;
+        }
+
+        input[type="password"] {
+            color: blue;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+        }
+
+        /* 필터선택자 */
+        /* ^가 의미하는건 첫 문자열 선택지정할 때 사용한다 */
+        /* http가 여기에만 들어가 있다 */
+        /* 즉 첫번째 문자열이 http://로 시작하는걸 찾아라라는 의미다 */
+        ul li a[href^="http://"] {
+            color: #000;
+            text-decoration: line-through;
+        }
+
+        /* $는 끝 문자열을 찾으라는 의미다 */
+        ul li a[href$="m"] {
+            color: orange;
+        }
+
+        /* 전체문자열 */
+        ul li a[href*="www"] {
+            color: pink;
+            font-weight: bold;
+        }
+
+        /* 가상클래스선택자 하이퍼링크가 걸린 애들의 가상 선택자 */
+        /* a에 링크가 걸린 엘리먼트를 전부 선택해주는것 */
+        /* 이부분이 좀 헷갈린다, 허나 그렇게 자주 쓰이는거 같지는 않으니까 넘어가도록 하자 */
+        ol a:link {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        ol a:visited {
+            color: green;
+        }
+
+        ol a:active {
+            color: red;
+        }
+
+        ol a:hover {
+            color: blue;
+        }
+
+        /* 마우스나 키보드로 포커스가 맞춰진 상태(튀어나온다는의미다) */
+        /* active 랑 차이점을 잘 모르겠다.... */
+        ol a:focus {
+            color: black;
+        }
+
+        /* before after이거는뭐 수도없이 많이 써본거 스펠링만 잘 쓰도록하자 */
+        .text::before {
+            content: "오늘의 추천 과일은";
+        }
+
+        .text::after {
+            content: "입니다";
+        }
+
+        /* *가상클래스 선택자 - 자식이 연속적인 경우 child쓴다 */
+        .list li:first-child {
+            color: red;
+        }
+
+        .list li:last-child {
+            color: green;
+        }
+
+        .list li:nth-child(3) {
+            color: blue;
+        }
+
+        .list li:nth-child(odd) {
+            background: #ccc;
+        }
+
+        .list li:nth-child(even) {
+            background: yellow;
+        }
+
+        /* 가상클래스 선택자 - 자식이 연속적이지 않은 경우 */
+        .list {
+            margin-top: 20px;
+        }
+
+        h2:first-of-type {
+            background: red;
+        }
+
+        /* nth of type을 기억해 주도록 하자 */
+        h2:nth-of-type(2) {
+            background: yellow;
+        }
+
+        h2:nth-of-type(3)+p::first-letter {
+            color: blue;
+        }
+
+        h2:last-of-type {
+            background: blue;
+        }
+
+        h2:last-of-type+p:first-letter {
+            border: 1px solid red;
+            font-size: 20px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>선택자 그룹 지정학기</h2>
+    <div class="b1">box1</div>
+    <div class="b2">box2</div>
+    <div class="b3">box3</div>
+    <h2>하위선택자 지정하기</h2>
+    <div class="b4">
+        <p>여기는 직계자식에 해당하는 문단입니다.</p>
+        <div>
+            <p>여기는 자손에 해당하는 문단입니다.</p>
+        </div>
+    </div>
+    <h2 class="tit">인접형제선택자 지정하기</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Dolorem impedit cupiditate temporibus doloribus,
+        voluptatem earum. Doloremque voluptates ducimus,<br> error minus odit, alias necessitatibus est ratione maiores
+        similique dolor nihil repudiandae?</p>
+    <h2>속성선택자 지정하기</h2>
+    <p>
+        <label for="">아이디</label>
+        <input type="text" name=""></input><br>
+        <label for="">비빌번호</label>
+        <input type="password" name=""></input><br>
+    </p>
+    <h2>속성 필터선택자 지정하기</h2>
+    <ul>
+        <li><a href="http://www.gogle.com">구글</a></li>
+        <li><a href="http://www.daum.net">다음</a></li>
+        <li><a href="http://www.naver.com">네이버</a></li>
+    </ul>
+    <h2>가상클래스 선택자 지정하기</h2>
+    <ol>
+        <li><a href="#">첫번째 링크</a></li>
+        <li><a href="#">두번째 링크</a></li>
+        <li><a href="#">세번째 링크</a></li>
+    </ol>
+    <h2>가상요소 클래스 선택자 지정하기</h2>
+    <p class="text">
+        <a href="#">사과</a>
+        <a href="#">배</a>
+    </p>
+    <ul class="list">
+        <li>첫번째 목롭입니다</li>
+        <li>두번째 목롭입니다</li>
+        <li>세번째 목롭입니다</li>
+        <li>네번째 목롭입니다</li>
+        <li>다섯번째 목롭입니다</li>
+        <li>여섯번째 목롭입니다</li>
+    </ul>
+</body>
+
+</html>

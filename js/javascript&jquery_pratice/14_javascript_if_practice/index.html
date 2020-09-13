@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/index.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>자바스크립트의 IF</h1>
+        <ol>
+            <li>프로그램의 핵심</li>
+            <li>프로그램을 지적으로 만들어준다</li>
+            <li>if , if~else, swithch</li>
+            <li>비교연산자를 사용한다</li>
+            <li>결과값은 true, false로 반환해준다</li>
+        </ol>
+
+        <script>
+            // if조건식 사용법
+
+            // 1.if(조건식){
+            //     참일때 처리내용
+            // }
+
+            // 2.if(조건식){참일때실행
+            // }else{거짓일때실행
+            // }
+
+            // 3.if(조건식){
+            //     첫 번째 조건이 참 일 때
+            // }else if(조건식){
+            //     두번 째 조건이 참 일 때
+            // }else{
+            //     마지막 조건이 거짓 일 때
+            // }
+
+            var num = 1;
+            if (num == 1) {
+                document.write("<br>" + "같다");
+            } else {
+                document.write("<br>" + "다르다");
+            }
+            if (num % 2 == 0) {
+                document.write("<br>" + "짝수다");
+            } else {
+                document.write("<br>" + "홀수다");
+            }
+            document.write("<hr>");
+
+            var num = prompt("좋아하는 숫자를 입력하세요");
+            if (num >= 100) {
+                document.write("<br>" + "당신은 큰 숫자를 좋아하십니다");
+            } else if (num >= 50) {
+                document.write("<br>" + "당신은 평범한 숫자를 좋아하십니다");
+            } else {
+                document.write("<br>" + "당신은 작은숫자를 좋아하십니다");
+            }
+            document.write("<hr>");
+            var kor = prompt("국어 점수를 입력하세요");
+            var kor = Number(kor);
+            var eng = prompt("영어 점수를 입력하세요");
+            var eng = Number(eng);
+            var his = prompt("역사 점수를 입력하세요");
+            var his = Number(his);
+            var sum = kor + eng + his;
+            var ave = sum / 3;
+
+            document.write("국어점수= " + kor + "<br>");
+            document.write("영어점수= " + eng + "<br>");
+            document.write("역사점수= " + his + "<br>");
+            document.write("<hr>");
+            if (ave >= 90) {
+                document.write("판정=" + "합격입니다");
+            } else {
+                document.write("판정=" + "불합격입니다");
+            }
+            document.write("<hr>");
+
+            if (ave >= 90) {
+                document.write("당신의 등급은" + " 수" + " 입니다");
+            } else if (ave >= 80) {
+                document.write("당신의 등급은" + " 우" + " 입니다");
+            } else if (ave >= 70) {
+                document.write("당신의 등급은" + " 미" + " 입니다");
+            } else if (ave >= 60) {
+                document.write("당신의 등급은" + " 양" + " 입니다");
+            } else {
+                document.write("당신의 등급은" + " 가" + "입니다");
+            }
+
+            document.write("<hr>");
+
+            function first() {
+                if (ave >= 90) {
+                    document.write("등급=" + " 수");
+                } else if (ave >= 80) {
+                    document.write("등급=" + " 우");
+                } else if (ave >= 70) {
+                    document.write("등급=" + " 미");
+                } else if (ave >= 60) {
+                    document.write("등급=" + " 양");
+                } else {
+                    document.write("등급=" + " 가");
+                }
+            }
+
+            if (ave >= 95) {
+                document.write("학점=" + "A+" + "<br>");
+            } else if (ave >= 90) {
+                document.write("학점=" + "A0" + "<br>");
+            } else if (ave >= 85) {
+                document.write("학점=" + "B+" + "<br>");
+            } else if (ave >= 80) {
+                document.write("학점=" + "B0" + "<br>");
+            } else if (ave >= 75) {
+                document.write("학점=" + "C+" + "<br>");
+            } else if (ave >= 70) {
+                document.write("학점=" + "C0" + "<br>");
+            } else if (ave >= 65) {
+                document.write("학점=" + "D+" + "<br>");
+            } else if (ave >= 60) {
+                document.write("학점=" + "D0" + "<br>");
+            } else {
+                document.write("학점=" + "F" + "<br>");
+            }
+            first();
+            // document.write(first()); 왜 이걸로 작성하면 undefined가 나오지?
+        </script>
+    </body>
+</html>

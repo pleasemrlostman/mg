@@ -1,0 +1,77 @@
+@charset "utf-8";
+body {
+    letter-spacing: -1px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+#main {
+    width: 960px;
+    border: 1px solid red;
+    margin: 0 auto 100px;
+}
+#main .slider {
+    height: 429px;
+    overflow: hidden;
+    position: relative;
+}
+#main .slider ul {
+    border: 1px solid blue;
+    width: 3840px;
+    overflow: hidden;
+}
+#main .slider ul li {
+    float: left;
+}
+#main .slider ul li a {
+}
+#main .slider ul li a img {
+}
+#main .slider .txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.8);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#main .slider .txt h2 {
+    color: #333;
+    font-size: 36px;
+    margin: 38px 0 8px;
+}
+#main .slider .txt h3 {
+    color: #333;
+    font-size: 24px;
+}
+
+#main2 {
+    width: 960px;
+    border: 1px solid red;
+    margin: 0 auto 100px;
+}
+#main2 .slider2 {
+    border: 1px solid blue;
+    position: relative;
+    height: 429px;
+    overflow: hidden;
+}
+#main2 .slider2 .txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.8);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#main2 .slider2 .txt h2 {
+    color: #333;
+    font-size: 36px;
+    margin: 38px 0 8px;
+}
+#main2 .slider2 .txt h3 {
+    color: #333;
+    font-size: 24px;
+}

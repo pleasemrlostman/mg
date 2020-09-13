@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>[자바스크립트 변수란]</h1>
+        <p>
+            스크립트는 자신의 작업을 시작하는동안 어떤 정보들을 임시로
+            저장해야할 필요가있다 이때 스크립트가 데이터를 저장해 두는 것을
+            변수라고 한다.
+        </p>
+        <h2>1.자바스크립트 변수의 종류</h2>
+        <ol>
+            <li>
+                전역변수 : 문서 전체에 영향을 주는 변수로, 영역(함수)에 관계없이
+                어디서든지 사용이 가능한 함수
+            </li>
+            <li>
+                지역변수 : 함수내에서 사용되는 변수로 그 함수 내에서만 영향력을
+                가지고 함수를 호출했을 경우만 작동하다가 함수가 종료되면
+                소멸되는 변수를 지역변수라고한다
+            </li>
+        </ol>
+        <h2>2.변수선언방법</h2>
+        <ol>
+            <li>변수는 반드시 영문 대소문자가 와야한다 (소문자쓰는걸 권장)</li>
+            <li>변수명 첫 글자는 숫자가 오면 안된다.</li>
+            <li>변수명 사이에 공백을 줄 수 없다.</li>
+            <li>변수명은 영문 대소문자를 구분한다</li>
+            <li>변수명으로 색상이 변하는 예약어는 사용할 수 없다.</li>
+            <li>변수명에는 특수문자를 사용할 수 없다.</li>
+            <li>변수명은 의미를 담을 수 있는 이름으로 지정</li>
+        </ol>
+        <p>
+            <img src="images/var_list.jpg" alt="" />
+        </p>
+
+        <script>
+            var num01;
+            num01 = 10;
+            // 변수초기화 : 데이터를 대입하는 것을 의미한다
+            alert(num01);
+            // 변수의 출력
+            console.log(num01);
+            // 변수 콘솔에 출력해주는 명령
+            document.write(num01);
+            // 문서의 body에다가 츨력
+
+            var n01, n02, no3, n04;
+            // 변수를 동시에 선언할 때 콤마(,) 사용
+            var text = "내가 변수에 넣고자 하는 문자";
+            // 변수를 지정과 동시에 초기화를 동사에 데이터를 선언
+            var text1 = "년 후에 당신은 ";
+            var text2 = "웹 전문가가 되어 있을 겁니다.";
+
+            var res = num01 + text1 + text2;
+            alert(res);
+            console.log(res);
+            document.write("<br>" + res);
+
+            function sum() {
+                var num01 = 20;
+                var num02 = 30;
+                var res = num01 + num02;
+                return res;
+                // 결과값을 나오게하는 문장 호출한 애 한테 값을 돌려주는거
+                // 이함수 내에서만 사용 하는걸 지역변수라고 한다
+            }
+
+            document.write("<br>" + sum() + "<br>");
+            document.write(num01);
+        </script>
+    </body>
+</html>

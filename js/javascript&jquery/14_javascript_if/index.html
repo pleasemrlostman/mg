@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>자바스크립트의 조건문(If)</title>
+    </head>
+    <body>
+        <h1>자바스크립트의 IF</h1>
+        <ol>
+            <li>프로그램의 핵심</li>
+            <li>프로그램을 지적으로 만들어준다</li>
+            <li>if, if~else, switch</li>
+            <li>비교연산자를 사용한다</li>
+            <li>결과값은 true, false반환해줌</li>
+        </ol>
+    </body>
+    <script>
+        // if조건문 사용법
+        // 1.if(조건식){
+        //     참일때 처리내용
+        // }
+        // 2. if(조건식){
+        //     참일때 실행
+        // }else{
+        //     거짓일때 실행
+        // }
+        // 3.if(조건식){
+        //     첫 번째 조건이 참 일때
+        // }else if(조건식){
+        //     두 번째 조건이 참 일때
+        // }else if(조간식){
+        //     세 번재 조건이 참 일때
+        // }else{
+        //     마지막 조건이 거잣 일때
+        // }
+        var num = 9;
+        if (num == 10) {
+            document.write("<br>" + "같다");
+        } else {
+            document.write("<br>" + "다르다");
+        }
+        if (num % 2 == 0) {
+            document.write("<br>" + "짝수다");
+        } else {
+            document.write("<br>" + "홀수다" + "<br>");
+        }
+
+        document.write("<hr>");
+        // var num = prompt("숫자를 입력하세요");
+        // if (num % 2 == 0) {
+        //     alert("짝수입니다.");
+        // } else {
+        //     alert("홀수입니다");
+        // }
+
+        var kor = prompt("국어 점수를 입력하세요");
+        var kor = Number(kor);
+        var eng = prompt("영어 점수를 입력하세요");
+        var eng = Number(eng);
+        var mat = prompt("수학 점수를 입력하세요");
+        var mat = Number(mat);
+
+        var tot = kor + eng + mat;
+        var ave = tot / 3;
+
+        document.write("국어점수=" + kor + "<br>");
+        document.write("영어점수=" + eng + "<br>");
+        document.write("수학점수=" + mat + "<br>");
+        document.write("총점=" + tot + "<br>");
+        document.write("평균=" + ave + "<br>");
+
+        // if (ave >= 80) {
+        //     document.write("<br>" + "판정=" + "합격입니다");
+        // } else {
+        //     document.write("<br>" + "판정=" + "불합격입니다");
+        // }
+        // 평균이 90점 이상일 때 수
+        // 평균이 80점 이상일 때 우
+        // 평균이 70점 이상일 때 미
+        // 평균이 60점 이상일 때 양
+        // 평균이 60점 미만일 때 가
+
+        if (ave >= 90) {
+            document.write("<br>" + "수");
+        } else if (ave >= 80) {
+            document.write("<br>" + "우");
+        } else if (ave >= 70) {
+            document.write("<br>" + "미");
+        } else if (ave >= 60) {
+            document.write("<br>" + "양");
+        } else {
+            document.write("<br>" + "가");
+        }
+    </script>
+</html>

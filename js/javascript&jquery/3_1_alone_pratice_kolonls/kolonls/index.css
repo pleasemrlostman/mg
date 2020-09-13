@@ -1,0 +1,216 @@
+@charset "utf-8";
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#header{
+    width: 100%;
+}
+
+#header .header_inner{
+    width: 1110px;
+    margin: 0 auto;
+    height: 74px;
+}
+
+#header .header_inner .logo{
+    background: url("images/logo.gif") no-repeat;
+    width: 225px;
+    height: 74px;
+    float: left;
+    background-size:225px;
+    text-indent: -99999px;
+    margin-right: 68px;    
+}
+
+#header .header_inner .gnb>li{
+    float: left;
+    margin-top: 10px;
+    position: relative;
+}
+#header .header_inner .gnb>li:hover>a{
+    color:#fff;
+    background: #052ab6;
+}
+
+#header .header_inner .gnb>li:hover::before{
+    content: "";
+    background: url("images/arr-white-bottom-6x5.png");
+    width: 6px;
+    height: 5px;
+    position: absolute;
+    top:40%;
+    right:25px;
+}
+
+#header .header_inner .gnb>li>a{
+    display: block;
+    padding:0 41px 10px 25px;
+    line-height: 54px;
+    font-weight: 700;
+    font-size: 18px;
+    color:black;
+    position: relative;
+}
+/* #header .header_inner .gnb>li:hover .depth2{
+    display: block;
+} */
+
+#header .header_inner .gnb>li>a::before{
+    content: "";
+    background: url("images/arr-black-bottom-6x5.png");
+    width: 6px;
+    height: 5px;
+    position: absolute;
+    top:40%;
+    right:25px;
+}
+#header .header_inner .gnb .depth2{
+    position: absolute;
+    z-index:3;
+    width: 100%;
+    background:#052ab6;
+    display: none;
+    padding: 15px 15px 15px 0;
+    
+}
+#header .header_inner .gnb .depth2 li{
+}
+
+#header .header_inner .gnb .depth2 li a{
+    display: block;
+    line-height: 35px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    text-indent: 25px;
+    width: 100px;
+    padding-right: 15px;
+}
+#header .header_inner .gnb .depth2 li:hover a{
+    background: #fff;
+    color:#052ab6
+}
+
+
+#header .header_inner .r_gnb{
+    float: right;
+    margin-top: 18px;
+}
+#header .header_inner .r_gnb li{
+    float: left;
+}
+#header .header_inner .r_gnb li:first-child{
+    background: #052ab6;
+}
+#header .header_inner .r_gnb li:first-child a{
+    color: #fff;
+}
+#header .header_inner .r_gnb li:last-child{
+    margin-left: 20px;
+}
+
+#header .header_inner .r_gnb li a{
+    display: block;
+    line-height: 36px;
+    width: 38px;
+    text-align: center;
+    font-size: 12px;
+    color: #777777;
+}
+
+
+
+#main{
+    width: 100%;
+    position: relative;
+}
+#main .main_visual{
+    margin: 0 auto;
+    background: url("images/8a8207f1c3c648ba8c6fea30ee7c26ed.jpg") no-repeat;
+    width: 2560px;
+    height: 900px;
+}
+
+#main .main_text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#main .main_text p{
+    text-align: center;
+}
+
+#main .main_text .p1{
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+#main .main_text .p2{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color:#fff;
+}
+
+#main .main_text .main_logo{
+    margin-top: 40px;;
+}
+
+#main .main_text .main_logo a{
+    display: block;
+    background: url("images/kolon-logo.png");
+    width: 385px;
+    height: 30px;
+    margin: 0 auto;;
+}
+
+#main .mouse{
+    background: url("images/mouse-ico.png");
+    width: 38px;
+    height: 55px;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#main .scroll{
+    background: url("images/arr-white-bottom-24x12.png");
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translateX(-50%);
+    animation: move 1.5s ease infinite;
+}
+
+#main .left a{
+    background: url("images/arr-white-left-30x54.png") no-repeat;
+    display: block;
+    width: 30px;
+    height: 54px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:15%;
+}
+
+#main .right a{
+    background: url("images/arr-white-right-30x54.png") no-repeat;
+    display: block;
+    width: 30px;
+    height: 54px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:15%;
+}
+
+@keyframes move{
+    0%{top:80%;opacity: 100%;}
+    100%{top:82%;opacity: 0%;}
+}

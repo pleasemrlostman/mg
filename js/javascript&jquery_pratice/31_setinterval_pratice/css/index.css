@@ -1,0 +1,14 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.popup {
+    width: 500px;
+    height: 500px;
+    line-height: 500px;
+    border: 5px solid #333;
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+    margin: 100px auto 0;
+}

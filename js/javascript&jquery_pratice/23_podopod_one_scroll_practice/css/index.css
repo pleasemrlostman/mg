@@ -1,0 +1,414 @@
+@charset "utf-8";
+body {
+    letter-spacing: -1px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Open Sans", "맑은 고딕", "malgun gothic" sans-serif;
+    color: rgb(136, 136, 136);
+    font-size: 16px;
+}
+
+.quick {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.quick li {
+    margin-bottom: 20px;
+}
+
+.quick li:last-child {
+    margin-bottom: 0px;
+}
+
+.quick li a {
+    background: url("../images/page_bg.png") no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -99999px;
+}
+
+.quick li.on a {
+    background-position-y: -20px;
+    z-index: 100;
+}
+.quick li a:hover {
+    background-position-y: -20px;
+}
+
+.section1 {
+    width: 100%;
+    height: 1277px;
+    background: #dcd8d5;
+    position: relative;
+    z-index: 99;
+}
+.section1 .btn_shop1 {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.section1 .btn_shop1 img {
+    width: 58px;
+    height: 58px;
+}
+
+.section1 .btn_shop2 {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+}
+
+.section1 .btn_shop2 img {
+    width: 38px;
+    height: 38px;
+}
+
+.section1 .section1_inner {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid red;
+}
+
+.section1 .section1_inner .tit {
+    position: absolute;
+    top: 350px;
+    left: 60px;
+    text-align: center;
+}
+
+.section1 .section1_inner .tit p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #989491;
+    line-height: 18px;
+}
+
+.section1 .section1_inner .tit .btn_down1 {
+    margin-top: 34px;
+    display: inline-block;
+}
+/* <!-- --------------------------------------------section1끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section2시작-------------------------------------------------- --> */
+.section2 {
+    height: 1025px;
+    background: url("../images/con_02_bg.jpg") repeat-x;
+}
+.section2 .header {
+    height: 90px;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    top: 1277;
+    left: 0;
+}
+.section2 .header.on {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.section2 .header a {
+    top: 0;
+    position: absolute;
+}
+.section2 .header .btn_shop {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section2 .header .btn_shop img {
+    width: 57px;
+}
+.section2 .header h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.section2 .header h1 a {
+    position: static;
+}
+.section2 .header .btn_cart {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section2 .header .btn_cart img {
+    width: 57px;
+}
+.section2 .section2_inner {
+    width: 1000px;
+    height: 1025px;
+    border: 1px solid green;
+    margin: 0 auto;
+    position: relative;
+    z-index: 90;
+}
+.section2 .section2_inner .mobile_case {
+    position: absolute;
+    top: -1200px;
+    left: 50px;
+    /* border: 1px solid red; */
+}
+.section2 .section2_inner .mobile_case.on {
+    animation: s1_ani 2s ease;
+    animation-fill-mode: forwards;
+}
+/* 휴대폰 케이스 애니메이션   시작*/
+@keyframes s1_ani {
+    0% {
+        top: -1200px;
+    }
+    50% {
+        top: 200px;
+    }
+    100% {
+        top: 50px;
+    }
+}
+
+/* 휴대폰 케이스 애니메이션  끝 */
+.section2 .section2_inner .title_area {
+    float: right;
+    width: 475px;
+    /* border: 1px solid red; */
+    padding-top: 146px;
+}
+.section2 .section2_inner .title_area h2 {
+    font-size: 25px;
+    color: #d1b694;
+    margin: 28px 0;
+}
+.section2 .section2_inner .title_area .p1 {
+    color: #c1b9b2;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
+.section2 .section2_inner .title_area .p2 {
+    font-size: 12px;
+    color: #8f8c88;
+    margin: 12px 0;
+}
+.section2 .section2_inner .title_area .p3 {
+    font-size: 12px;
+    color: #8f8c88;
+    line-height: 13px;
+}
+.section2 .section2_inner .title_area .btn_down2 {
+    background: url("../images/btn_con_02_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    /* margin: 0 auto; */
+    margin-bottom: 140px;
+}
+
+/* <!-- --------------------------------------------section2끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section3시작-------------------------------------------------- --> */
+.section3 {
+    height: 1000px;
+}
+.section3 .section3_inner {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.section3 .section3_inner .text_area .btn_down3 {
+    background: url("../images/btn_con_03_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+/* <!-- --------------------------------------------section3끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section4시작-------------------------------------------------- --> */
+.section4 {
+    height: 1140px;
+    background: url("../images/con_04_bg.jpg") repeat-x;
+}
+.section4 .section4_inner {
+    width: 1000px;
+    height: 1140px;
+    border: 1px solid blue;
+    margin: 0 auto;
+}
+.section4 .section4_inner .text_area .btn_down4 {
+    background: url("../images/btn_con_04_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+/* <!-- --------------------------------------------section4끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section5시작-------------------------------------------------- --> */
+.section5 {
+    height: 1040px;
+    background: #dcd8d5;
+}
+.section5 .section5_inner {
+    width: 1000px;
+    height: 1040px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.section5 .section5_inner .text_area .btn_down5 {
+    background: url("../images/btn_con_05_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+
+/* <!-- --------------------------------------------section5끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section6시작-------------------------------------------------- --> */
+.section6 {
+    height: 1000px;
+    background: url("../images/con_12_bg.jpg") repeat-x;
+}
+.section6 .section6_inner {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid blue;
+    margin: 0 auto;
+}
+.section6 .section6_inner .text_area .btn_down6 {
+    background: url("../images/btn_con_06_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+/* <!-- --------------------------------------------section6끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section7시작-------------------------------------------------- --> */
+.section7 {
+    height: 1000px;
+    background: #efefef;
+}
+.section7 .section7_inner {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.section7 .section7_inner .text_area .btn_down7 {
+    background: url("../images/btn_con_07_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+/* <!-- --------------------------------------------section7끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section8시작-------------------------------------------------- --> */
+.section8 {
+    height: 983px;
+    background: #fff;
+}
+.section8 .section8_inner {
+    width: 1000px;
+    height: 983px;
+    border: 1px solid blue;
+    margin: 0 auto;
+}
+.section8 .section8_inner .text_area .btn_down8 {
+    background: url("../images/btn_con_01_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+/* <!-- --------------------------------------------section8끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section9시작-------------------------------------------------- --> */
+.section9 {
+    height: 1150px;
+    background: #fff;
+}
+.section9 .section9_inner {
+    width: 1000px;
+    height: 1150px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.section9 .section9_inner .text_area .btn_down9 {
+    background: url("../images/btn_con_04_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+/* <!-- --------------------------------------------section9끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section10시작-------------------------------------------------- --> */
+.section10 {
+    height: 1077px;
+    background: #211f17 url("../images/con_10_bg.jpg") no-repeat center top;
+}
+.section10 .section10_inner {
+    width: 1000px;
+    height: 1077px;
+    border: 1px solid blue;
+    margin: 0 auto;
+}
+.section10 .section10_inner .text_area .btn_down10 {
+    background: url("../images/btn_con_09_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+/* <!-- --------------------------------------------section10끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section11시작-------------------------------------------------- --> */
+.section11 {
+    height: 1140px;
+    background: #e7e7e7;
+}
+.section11 .section11_inner {
+    width: 1000px;
+    height: 1140px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.section11 .section11_inner .text_area .btn_down11 {
+    background: url("../images/btn_con_09_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+}
+/* <!-- --------------------------------------------section11끝-------------------------------------------------- --> */
+/* <!-- --------------------------------------------section12시작-------------------------------------------------- --> */
+.section12 {
+    height: 6184px;
+    background: #fcf5ec;
+}
+.section12 .section12_inner {
+    width: 1000px;
+    height: 6184px;
+    border: 1px solid blue;
+    margin: 0 auto;
+}
+.section12 .section12_inner .text_area .btn_down12 {
+    background: url("../images/btn_con_09_arrow.png") no-repeat;
+    display: block;
+    width: 67px;
+    height: 66px;
+    text-indent: -99999px;
+    margin: 0 auto;
+    transform: rotate(180deg);
+}
+/* <!-- --------------------------------------------section12끝-------------------------------------------------- --> */

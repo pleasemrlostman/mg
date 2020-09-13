@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>[ jquery 이벤트 관련 함수]</h1>
+        <ol>
+            <li>click - 마우스 클릭 (CSS는 click이없다)</li>
+            <li>mouseenter - 마우스 호버</li>
+            <li>mouseleave - 마우스 아웃</li>
+            <li>hover - 마우스호버 & 마우스 아웃 (동시에 처리한다)</li>
+            <li>focus - 포커싱 되었을 때</li>
+            <li>blur - 포커스가 해제 되었을 때</li>
+        </ol>
+        <hr />
+        <div class="box1 box">Click!</div>
+        <div class="box2 box">mouseover / mouseout</div>
+        <div class="box3 box">hover</div>
+        <p2
+            <label for="">message :</label>
+            <input type="text" placeholder="message insert!!" id="t1"/>
+        </p>
+        <ul>
+            <li><a href="javascript:;">Menu1</a></li>
+            <li><a href="javascript:;">Menu2</a></li>
+            <li><a href="javascript:;">Menu3</a></li>
+        </ul>
+        <script>
+            $(function(){
+                // $(".box1").click(function(){
+                //     $(".box1").css("background","#0cf")
+                // })
+
+                var box1 = $(".box1")
+                    box1.click(function(){
+                        $(this).css("background","#0cf")
+                    })
+
+                // $(".box2").mouseenter(function(){
+                //     $(".box2").css("background", "#0cf")
+                // })
+                // $(".box2").mouseleave(function(){
+                //     $(".box2").css("background", "#fc0")
+                // })
+
+                var box2 = $(".box2")
+                    box2.mouseenter(function(){
+                        $(this).css("background","#0cf")
+                    })
+                    box2.mouseleave(function(){
+                        $(this).css("background","#fc0")
+                    })
+
+                    // hover
+
+                var box3 = $(".box3")
+                    box3.hover(
+                    function(){
+                        $(this).css("background","#0cf")
+                    },
+                    function(){
+                        $(this).css("background","#fc0")
+                    })    
+
+                var t1 = $("#t1")
+                t1.focus(function(){
+                    $(this).css({"color":"#c00","background":"#fc0"})
+                    // 두개룰 동시에 넣을 때는 중가로안에너헝주도록 하자
+                })
+                t1.blur(function(){
+                    $(this).css({"color":"#000","background":"#f2f2f2"})
+                })
+
+                $("ul li").click(function(){
+                    $("ul li").removeClass("on")
+                    $(this).addClass("on")
+                })
+
+            })
+        </script>
+    </body>
+</html>

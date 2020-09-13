@@ -1,0 +1,46 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.gallery_wrap {
+    margin: 0 auto;
+    width: 990px;
+}
+.gallery_wrap h1 {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.gallery_wrap .gallery {
+    width: 990px;
+    overflow: hidden;
+}
+.gallery_wrap .gallery li {
+    float: left;
+    margin: 0 15px;
+}
+.gallery_wrap .gallery .list1 {
+    margin-left: 0;
+}
+.gallery_wrap .gallery .list4 {
+    margin-right: 0;
+}
+.gallery_wrap .gallery li a {
+    display: block;
+    width: 225px;
+    height: 140px;
+}
+.gallery_wrap .gallery .list1 a {
+    background: url("../images/p1.jpg");
+}
+.gallery_wrap .gallery .list2 a {
+    background: url("../images/p2.jpg");
+}
+.gallery_wrap .gallery .list3 a {
+    background: url("../images/p3.jpg");
+}
+.gallery_wrap .gallery .list4 a {
+    background: url("../images/p4.jpg");
+}

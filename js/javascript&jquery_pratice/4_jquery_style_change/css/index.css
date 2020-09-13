@@ -1,0 +1,17 @@
+div{
+    width: 200px;
+    height: 200px;
+    float: left;
+    border:1px solid #000;
+}
+
+.box1{
+    background: #fc0;
+}
+.box2{
+    margin: 0 20px;
+    background: #0cf;
+}
+.box3{
+    background: #f67;
+}

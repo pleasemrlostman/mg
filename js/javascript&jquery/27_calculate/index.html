@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>계산기프로그램</title>
+    </head>
+    <body>
+        <div class="box">
+            <form action="">
+                <fieldset>
+                    <legend></legend>
+                    <label for="">첫번째 입력값</label>
+                    <input type="text" id="inp1" />
+                    <label for="">두번째 입력값</label>
+                    <input type="text" id="inp2" />
+                    <div class="btn">
+                        <button type="button" id="plus_btn">+</button>
+                        <button type="button" id="minus_btn">-</button>
+                        <button type="button" id="multie_btn">*</button>
+                        <button type="button" id="divide_btn">/</button>
+                        <button type="button" id="rest_btn">%</button>
+                        <button type="button" id="clear_btn">C</button>
+                    </div>
+                    <label for="">결과값 출력</label>
+                    <input type="text" id="res" />
+                </fieldset>
+            </form>
+        </div>
+        <script>
+            // 폼안에 데이터를 읽어 변수에 기억시키는 작업
+
+            var in1 = document.getElementById("inp1");
+            var in2 = document.getElementById("inp2");
+            var plus = document.getElementById("plus_btn");
+            var minus = document.getElementById("minus_btn");
+            var multie = document.getElementById("multie_btn");
+            var divide = document.getElementById("divide_btn");
+            var rest = document.getElementById("rest_btn");
+            var clear = document.getElementById("clear_btn");
+
+            function dataClear() {
+                inp1.value = "";
+                inp2.value = "";
+                res.value = "";
+            }
+            clear_btn.onclick = function () {
+                dataClear();
+            };
+            // -------------------------------------------------
+            function add() {
+                var num1 = Number(in1.value);
+                var num2 = Number(in2.value);
+                var result = num1 + num2;
+                res.value = result;
+            }
+            plus_btn.onclick = function () {
+                add();
+            };
+            // -------------------------------------------------
+            function sub() {
+                var num1 = Number(in1.value);
+                var num2 = Number(in2.value);
+                var result = num1 - num2;
+                res.value = result;
+            }
+            minus_btn.onclick = function () {
+                sub();
+            };
+            // -------------------------------------------------
+            function x() {
+                var num1 = Number(in1.value);
+                var num2 = Number(in2.value);
+                var result = num1 * num2;
+                res.value = result;
+            }
+            multie_btn.onclick = function () {
+                x();
+            };
+            // -------------------------------------------------
+            function div() {
+                var num1 = Number(in1.value);
+                var num2 = Number(in2.value);
+                var result = num1 / num2;
+                res.value = result;
+            }
+            divide_btn.onclick = function () {
+                div();
+            };
+            // --------------------------------------------------
+            function sub() {
+                var num1 = Number(in1.value);
+                var num2 = Number(in2.value);
+                var result = num1 % num2;
+                res.value = result;
+            }
+            rest_btn.onclick = function () {
+                sub();
+            };
+        </script>
+    </body>
+</html>
