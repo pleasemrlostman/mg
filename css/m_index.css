@@ -199,6 +199,16 @@
         height: 200px;
         padding-top: 140px;
     }
+    #quick_menu .quick_box1 a {
+        background: url("../images/icon/quick_view.png") no-repeat center 30%;
+        background-size: 60px;
+    }
+    #quick_menu .quick_box2 a {
+        background: url("../images/icon/quick_banktransfer.png") no-repeat
+            center 30%;
+        background-size: 45px;
+    }
+
     /* -------
     m_section1
     ---------- */
